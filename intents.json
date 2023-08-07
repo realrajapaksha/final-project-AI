@@ -1,111 +1,95 @@
 {
 	"intents": [
 		{
-			"context":"greetings",
 			"patterns": [
-				"Hi there",
-				"How are you",
-				"Is anyone there",
-				"Hey",
-				"Hola",
-				"Hello",
-				"Good day",
-				"Namaste",
-				"yo"
+				"html",
+				"css",
+				"javascript",
+				"bootstrap",
+				"python",
+				"c",
+				"c++",
+				"vb",
+				"pascal",
+				"php",
+				"arduino",
+				"basic programming"
 			],
-			"responses": [
-				"Hello",
-				"Good to see you again",
-				"Hi there, how can I help?"
-			],
-			"tag":"hello"
+			"tag": "software 1"
 		},
 		{
-			"context": "farewell",
 			"patterns": [
-			"Goodbye",
-			"Bye",
-			"See you later",
-			"Take care",
-			"Farewell",
-			"Have a great day",
-			"Until next time",
-			"Adios",
-			"Namaste"
+				"java",
+				"c#",
+				"spring boot",
+				".net",
+				"react",
+				"angular",
+				"nodejs",
+				"node",
+				"laravel"
 			],
-			"responses": [
-			"Goodbye",
-			"Farewell",
-			"Take care and have a great day!",
-			"Until next time, goodbye!",
-			"Goodbye! If you have any more questions, feel free to ask."
-			],
-			"tag": "bye"
-			},
-			{
-				"context": "contact_live_agent",
-				"patterns": [
-				  "Connect me to a live agent",
-				  "I need to speak to a representative",
-				  "Can I talk to someone directly?",
-				  "I want to contact a live person",
-				  "Please provide live agent support"
-				],
-				"responses": [
-				  "To speak with a live agent, please contact our support hotline at +94775001170.",
-				  "For direct assistance, you can reach our live agents at +94775001170.",
-				  "If you need immediate support, please call our live agent hotline at +94775001170.",
-				  "To connect with a live agent, dial our support number at +94775001170."
-				],
-				"tag": "contact_live_agent"
-			  },
-			  
+			"tag": "software 2"
+		},
 		{
-			"context": "opening_hours",
 			"patterns": [
-			"What are your opening hours?",
-			"When are you open?",
-			"What time do you open?",
-			"What time do you close?",
-			"Are you open today?",
-			"Are you open now?",
-			"Can you tell me your hours of operation?"
+				"Connect me to a live agent",
+				"I need to speak to a representative",
+				"Can I talk to someone directly?",
+				"I want to contact a live person",
+				"Please provide live agent support"
 			],
 			"responses": [
-			"Our opening hours are from 9:00 AM to 6:00 PM, Monday to Friday.",
-			"We are open from 9:00 AM to 6:00 PM, Monday to Friday.",
-			"Our business hours are Monday to Friday, from 9:00 AM to 6:00 PM."
+				"To speak with a live agent, please contact our support hotline at +94775001170.",
+				"For direct assistance, you can reach our live agents at +94775001170.",
+				"If you need immediate support, please call our live agent hotline at +94775001170.",
+				"To connect with a live agent, dial our support number at +94775001170."
+			],
+			"tag": "contact_live_agent"
+		},
+		{
+			"patterns": [
+				"What are your opening hours?",
+				"When are you open?",
+				"What time do you open?",
+				"What time do you close?",
+				"Are you open today?",
+				"Are you open now?",
+				"Can you tell me your hours of operation?"
+			],
+			"responses": [
+				"Our opening hours are from 9:00 AM to 6:00 PM, Monday to Friday.",
+				"We are open from 9:00 AM to 6:00 PM, Monday to Friday.",
+				"Our business hours are Monday to Friday, from 9:00 AM to 6:00 PM."
 			],
 			"tag": "opening_hours"
-			},
-			{
-				"context": "graphic_card_price",
-				"patterns": [
+		},
+		{
+			"context": "graphic_card_price",
+			"patterns": [
 				"What is the price range of RTX graphic cards?",
 				"How much does an RTX graphic card cost?",
 				"What is the price of RTX graphic cards?",
 				"Can you tell me the price range for RTX graphic cards?",
 				"What are the prices of RTX graphic cards?"
-				],
-				"responses": [
+			],
+			"responses": [
 				"The price range for RTX graphic cards typically varies from 100,000 LKR to 500,000 LKR.",
 				"RTX graphic cards are available in the price range of 100,000 LKR to 500,000 LKR.",
 				"You can expect to find RTX graphic cards priced between 100,000 LKR and 500,000 LKR."
-				],
-				"tag": "graphic_card_price"
-				},
-		{	
-			"context": [""],
+			],
+			"tag": "graphic_card_price"
+		},
+		{
 			"patterns": [],
 			"responses": [
 				"Sorry, can't understand you",
 				"Please give me more info",
 				"Not sure I understand"
 			],
-			"tag":"noanswer"
+			"tag": "noanswer"
 		},
 		{
-			"context": "computer_shop",
 			"patterns": [
 				"What types of computers do you sell?",
 				"What kind of computers do you have available?",
@@ -121,7 +105,6 @@
 			"tag": "computers"
 		},
 		{
-			"context": "laptops",
 			"patterns": [
 				"Do you have laptops available?",
 				"What is your laptop collection?",
@@ -137,7 +120,6 @@
 			"tag": "laptops"
 		},
 		{
-			"context": "gaming_computers",
 			"patterns": [
 				"Can you recommend a gaming computer?",
 				"What gaming computers do you have?",
@@ -153,7 +135,6 @@
 			"tag": "gaming_computers"
 		},
 		{
-			"context": "brands",
 			"patterns": [
 				"What brands of computers do you carry?",
 				"Do you sell computers from specific brands?",
@@ -168,7 +149,6 @@
 			"tag": "brands"
 		},
 		{
-			"context": "discounts",
 			"patterns": [
 				"Are there any discounts or promotions currently available?",
 				"Do you have any special offers or discounts?",
@@ -183,9 +163,8 @@
 			"tag": "discounts"
 		},
 		{
-			"context": "warranty",
 			"patterns": [
-							"What is the warranty period for your products?",
+				"What is the warranty period for your products?",
 				"Do your computers come with a warranty?",
 				"What are the warranty terms for your computers?",
 				"Is there any warranty coverage for repairs?"
@@ -198,7 +177,6 @@
 			"tag": "warranty"
 		},
 		{
-			"context": "customization",
 			"patterns": [
 				"Can I customize the specifications of a computer?",
 				"Do you offer options for customizing computers?",
@@ -213,7 +191,6 @@
 			"tag": "customization"
 		},
 		{
-			"context": "financing",
 			"patterns": [
 				"Do you offer financing options?",
 				"Can I pay for a computer in installments?",
@@ -228,7 +205,6 @@
 			"tag": "financing"
 		},
 		{
-			"context": "return_policy",
 			"patterns": [
 				"What is the return policy for purchases?",
 				"What are your guidelines for returns?",
@@ -243,7 +219,6 @@
 			"tag": "return_policy"
 		},
 		{
-			"context": "refurbished",
 			"patterns": [
 				"Are there any refurbished computers for sale?",
 				"Do you offer refurbished computers?",
@@ -257,125 +232,113 @@
 			],
 			"tag": "refurbished"
 		},
-
 		{
-			"context": "computer_specs",
 			"patterns": [
-			"What are the technical specifications of your computers?",
-			"Can you provide details about the hardware components in your computers?",
-			"I'm interested in knowing the specs of your available computers.",
-			"What processor and RAM options do your computers offer?"
+				"What are the technical specifications of your computers?",
+				"Can you provide details about the hardware components in your computers?",
+				"I'm interested in knowing the specs of your available computers.",
+				"What processor and RAM options do your computers offer?"
 			],
 			"responses": [
-			"Our computers come with a range of specifications including different processor options, RAM capacity, storage size, and graphics capabilities.",
-			"The specific hardware components vary depending on the model, but we can provide you with detailed specifications for each computer."
+				"Our computers come with a range of specifications including different processor options, RAM capacity, storage size, and graphics capabilities.",
+				"The specific hardware components vary depending on the model, but we can provide you with detailed specifications for each computer."
 			],
 			"tag": "computer_specs"
-			},
-			{
-			"context": "accessory_bundles",
+		},
+		{
 			"patterns": [
-			"Do you offer any bundles that include accessories with computer purchases?",
-			"Are there any deals where I can get accessories along with a computer?",
-			"I'm looking for a package deal that includes computer accessories.",
-			"Can you recommend any bundles that include peripherals?"
+				"Do you offer any bundles that include accessories with computer purchases?",
+				"Are there any deals where I can get accessories along with a computer?",
+				"I'm looking for a package deal that includes computer accessories.",
+				"Can you recommend any bundles that include peripherals?"
 			],
 			"responses": [
-			"Yes, we have bundle deals available that include various computer accessories such as keyboards, mice, monitors, and speakers.",
-			"Purchasing a computer along with an accessory bundle can offer you great value and convenience."
+				"Yes, we have bundle deals available that include various computer accessories such as keyboards, mice, monitors, and speakers.",
+				"Purchasing a computer along with an accessory bundle can offer you great value and convenience."
 			],
 			"tag": "accessory_bundles"
-			},
-			{
-			"context": "graphic_design_computers",
+		},
+		{
 			"patterns": [
-			"Which computers do you recommend for graphic design and video editing purposes?",
-			"I need a computer for graphic design and video editing. What are my options?",
-			"Do you have any computers specifically optimized for graphic design and video editing?",
-			"Can you suggest a computer that offers excellent performance for graphic-intensive tasks?"
+				"Which computers do you recommend for graphic design and video editing purposes?",
+				"I need a computer for graphic design and video editing. What are my options?",
+				"Do you have any computers specifically optimized for graphic design and video editing?",
+				"Can you suggest a computer that offers excellent performance for graphic-intensive tasks?"
 			],
 			"responses": [
-			"We have computers specifically designed and optimized for graphic design and video editing tasks.",
-			"These computers offer powerful processors, ample RAM, high-resolution displays, and dedicated graphics cards to handle demanding creative workloads.",
-			"Our sales team can help you find the ideal computer that meets your specific requirements for graphic design and video editing."
+				"We have computers specifically designed and optimized for graphic design and video editing tasks.",
+				"These computers offer powerful processors, ample RAM, high-resolution displays, and dedicated graphics cards to handle demanding creative workloads.",
+				"Our sales team can help you find the ideal computer that meets your specific requirements for graphic design and video editing."
 			],
 			"tag": "graphic_design_computers"
-			},
-			{
-			"context": "limited_edition",
+		},
+		{
 			"patterns": [
-			"Do you have any limited edition or special edition computers available?",
-			"Are there any unique or exclusive computer models in stock?",
-			"I'm interested in purchasing a special edition computer. What are my options?",
-			"Do you offer any rare or collectible computers?"
+				"Do you have any limited edition or special edition computers available?",
+				"Are there any unique or exclusive computer models in stock?",
+				"I'm interested in purchasing a special edition computer. What are my options?",
+				"Do you offer any rare or collectible computers?"
 			],
 			"responses": [
-			"Yes, we occasionally offer limited edition or special edition computers that feature unique designs, collaborations, or enhanced features.",
-			"These computers are often in limited supply and can be a great choice for enthusiasts or collectors."
+				"Yes, we occasionally offer limited edition or special edition computers that feature unique designs, collaborations, or enhanced features.",
+				"These computers are often in limited supply and can be a great choice for enthusiasts or collectors."
 			],
 			"tag": "limited_edition"
-			},
-			{
-			"context": "computer_lifespan",
+		},
+		{
 			"patterns": [
-			"What is the average lifespan of your computers?",
-			"How long can I expect your computers to last?",
-			"Do your computers have a long lifespan?",
-			"What is the durability of your computers?"
+				"What is the average lifespan of your computers?",
+				"How long can I expect your computers to last?",
+				"Do your computers have a long lifespan?",
+				"What is the durability of your computers?"
 			],
 			"responses": [
-			"The average lifespan of our computers depends on several factors, including usage, maintenance, and technological advancements.",
-			"Our computers are built to be durable and reliable, and with proper care, they can last for several years."
+				"The average lifespan of our computers depends on several factors, including usage, maintenance, and technological advancements.",
+				"Our computers are built to be durable and reliable, and with proper care, they can last for several years."
 			],
 			"tag": "computer_lifespan"
-			},
-			{
-			"context": "on_site_support",
+		},
+		{
 			"patterns": [
-			"Do you provide on-site technical support for computer installations?",
-			"Is there on-site assistance available for setting up the computer?",
-			"What kind of support do you offer for computer installations?",
-			"Can I get help with computer setup and troubleshooting?"
+				"Do you provide on-site technical support for computer installations?",
+				"Is there on-site assistance available for setting up the computer?",
+				"What kind of support do you offer for computer installations?",
+				"Can I get help with computer setup and troubleshooting?"
 			],
 			"responses": [
-			"Yes, we offer on-site technical support for computer installations and setup.",
-			"Our trained technicians can assist you with the initial setup, software installation, and troubleshooting.",
-			"Please let us know if you require on-site support, and we will make the necessary arrangements."
+				"Yes, we offer on-site technical support for computer installations and setup.",
+				"Our trained technicians can assist you with the initial setup, software installation, and troubleshooting.",
+				"Please let us know if you require on-site support, and we will make the necessary arrangements."
 			],
 			"tag": "on_site_support"
-			},
-			{
-			"context": "environmentally_friendly",
+		},
+		{
 			"patterns": [
-			"Do you have any environmentally-friendly or energy-efficient computers in your inventory?",
-			"Are there any eco-friendly computer options available?",
-			"I'm interested in purchasing a computer that has a low environmental impact.",
-			"Do you offer any energy-efficient computers?"
+				"Do you have any environmentally-friendly or energy-efficient computers in your inventory?",
+				"Are there any eco-friendly computer options available?",
+				"I'm interested in purchasing a computer that has a low environmental impact.",
+				"Do you offer any energy-efficient computers?"
 			],
 			"responses": [
-			"Yes, we have a selection of environmentally-friendly and energy-efficient computers.",
-			"These computers are designed to minimize energy consumption and reduce their environmental footprint.",
-			"They meet recognized standards for energy efficiency and may have additional eco-friendly features."
+				"Yes, we have a selection of environmentally-friendly and energy-efficient computers.",
+				"These computers are designed to minimize energy consumption and reduce their environmental footprint.",
+				"They meet recognized standards for energy efficiency and may have additional eco-friendly features."
 			],
 			"tag": "environmentally_friendly"
-			},
-			{
-			"context": "software_preinstalled",
+		},
+		{
 			"patterns": [
-			"What software comes pre-installed on your computers?",
-			"Do your computers include pre-installed software?",
-			"Which operating systems and applications are installed on your computers?",
-			"Do you offer any additional software options?"
+				"What software comes pre-installed on your computers?",
+				"Do your computers include pre-installed software?",
+				"Which operating systems and applications are installed on your computers?",
+				"Do you offer any additional software options?"
 			],
 			"responses": [
-			"Our computers come with pre-installed operating systems such as Windows, macOS, or Linux.",
-			"In addition to the operating system, they may include essential software applications such as web browsers, media players, and productivity tools.",
-			"We also offer a range of optional software packages and applications that you can choose from."
+				"Our computers come with pre-installed operating systems such as Windows, macOS, or Linux.",
+				"In addition to the operating system, they may include essential software applications such as web browsers, media players, and productivity tools.",
+				"We also offer a range of optional software packages and applications that you can choose from."
 			],
 			"tag": "software_preinstalled"
-			}
-
-		
-		
+		}
 	]
 }

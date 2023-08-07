@@ -1,43 +1,18 @@
+tags
 
-# Chatbot
-
-An AI chatbot API + Fronend with Tensorflow + flask
-
-
-
-
-## Installation
-
-Install These python Libraries (Im using Anaconda)
-
-```bash
- conda install -c anaconda flask-cors
-```
-```bash
- conda install tensorflow
-```
-```bash
- conda install flask
-
-```
-
-    
+development software sort by performance [min 1, max ++]
+- software 1
+- software 2
+- softwate 3
 
 
- 
-## API Reference
-
-#### Chat with bot
-
-```bash
-
-/chat
-
- {
-    "message": "Your Message here"
-}
+design software sort by performance [min 1, max ++]
+- design 1
+- desing 2
+- design 3
 
 
-```
+school student sort by grade [min 1, max ++]
+- school 1
+- school 2
 
-- ![alt text](https://github.com/PercyGFX/AI-Chatbot/blob/main/chatbot.png?raw=true)
