@@ -121,10 +121,10 @@ CORS(app)
 @app.route('/', methods=['POST'])
 def search():
   print("hiii its working")
-  message = request.json['search']
-  print(message)
+  req = request.get_json()
+  print(req['search'])
   print("message")
-  intents = pred_class(message, words, classes)
+  intents = pred_class(req['search'], words, classes)
   result = get_response(intents, data)
   response = jsonify({'response': result})
   response.headers.add('Access-Control-Allow-Origin', '*')
