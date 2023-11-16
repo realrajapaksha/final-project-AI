@@ -115,7 +115,7 @@ def get_response(intents_list, intents_json):
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/', methods=['GET'])
 def chat():
