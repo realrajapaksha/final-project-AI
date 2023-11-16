@@ -120,14 +120,15 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def search():
-    print("hiii its working")
-    message = request.json['search']
-    print(message)
-    intents = pred_class(message, words, classes)
-    result = get_response(intents, data)
-    response = jsonify({'response': result})
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+  return "hello"
+    # print("hiii its working")
+    # message = request.json['search']
+    # print(message)
+    # intents = pred_class(message, words, classes)
+    # result = get_response(intents, data)
+    # response = jsonify({'response': result})
+    # response.headers.add('Access-Control-Allow-Origin', '*')
+    # return response
 
 if __name__ == '__main__':
     app.run()
