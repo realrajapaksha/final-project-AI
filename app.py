@@ -3,7 +3,7 @@ import string
 import random
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from werkzeug.middleware.proxy_fix import ProxyFix
+# from werkzeug.middleware.proxy_fix import ProxyFix
 
 import nltk
 import numpy as np
@@ -127,12 +127,13 @@ def search():
     # req = request.get_json()
     # print(req['search'])
     print("message")
-    intents = pred_class(request.args.get('keyword'), words, classes)
+    intents = pred_class('development', words, classes)
     result = get_response(intents, data)
-    response = jsonify({'response': result})
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    print("done")
-    return response
+    return result
+    # response = jsonify({'response': result})
+    # response.headers.add('Access-Control-Allow-Origin', '*')
+    # print("done")
+    # return response
 
 if __name__ == '__main__':
   app.run(debug=TRUE)
