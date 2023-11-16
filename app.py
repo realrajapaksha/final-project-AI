@@ -123,7 +123,7 @@ def search():
   print("hiii its working")
   print(request.method)
   print(request.args.get('keyword'))
-  if request.method == 'POST':
+  if request.method == 'GET':
     # req = request.get_json()
     # print(req['search'])
     print("message")
