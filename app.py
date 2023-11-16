@@ -117,8 +117,9 @@ def get_response(intents_list, intents_json):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/search', methods=['GET'])
+@app.route('/', methods=['GET'])
 def chat():
+    print("hiii its working")
     message = request.json['search']
     print(message)
     intents = pred_class(message, words, classes)
@@ -129,13 +130,3 @@ def chat():
 
 if __name__ == '__main__':
     app.run()
-
-
-# app = Flask(__name__)
-
-# @app.route('/')
-# def hello_world():
-#     return 'Hello World!'
-
-# if __name__ == '__main__':
-#     app.run()
