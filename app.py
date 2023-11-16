@@ -124,10 +124,10 @@ def search():
   print(request.method)
   print(request.args.get('keyword'))
   if request.method == 'POST':
-    req = request.get_json()
-    print(req['search'])
+    # req = request.get_json()
+    # print(req['search'])
     print("message")
-    intents = pred_class(req['search'], words, classes)
+    intents = pred_class(request.args.get('keyword'), words, classes)
     result = get_response(intents, data)
     response = jsonify({'response': result})
     response.headers.add('Access-Control-Allow-Origin', '*')
