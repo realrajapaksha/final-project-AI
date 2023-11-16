@@ -122,6 +122,7 @@ CORS(app)
 def search():
   print("hiii its working")
   print(request.method)
+  print(request.args.get('keyword'))
   if request.method == 'POST':
     req = request.get_json()
     print(req['search'])
