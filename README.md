@@ -18,3 +18,5 @@ school student sort by grade [min 1, max ++]
 - school 1
 - school 2
 
+
+pip install click Flask gunicorn importlib-metadata itsdangerous Jinja2 MarkupSafe Werkzeug zipp Flask-Cors joblib nltk regex tqdm numpy tensorflow urllib3

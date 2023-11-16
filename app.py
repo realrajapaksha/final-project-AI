@@ -1,7 +1,7 @@
 import json
 import string
 import random
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from flask_cors import CORS
 # from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -9,22 +9,14 @@ import nltk
 import numpy as np
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
-from tensorflow.python.profiler import trace
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Dropout
-import nltk
+
 nltk.download("punkt")
 nltk.download("wordnet")
 nltk.download('omw-1.4')
 
-from nltk.stem import WordNetLemmatizer
-import tensorflow as tf
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-import nltk
-nltk.download("punkt")
-nltk.download("wordnet")
-nltk.download('omw-1.4')
+
 
 data_file = open('intents.json').read()
 data = json.loads(data_file)
