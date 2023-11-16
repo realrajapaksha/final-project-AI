@@ -118,18 +118,18 @@ def get_response(intents_list, intents_json):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/search', methods=['GET'])
+@app.route('/', methods=['GET'])
 def search():
   print("hiii its working")
   print(request.method)
   print(request.args.get('keyword'))
-  if request.method == 'GET':
+  # if request.method == 'GET':
     # req = request.get_json()
     # print(req['search'])
-    print("message")
-    intents = pred_class('development', words, classes)
-    result = get_response(intents, data)
-    return result
+  print("message")
+  intents = pred_class('development', words, classes)
+  result = get_response(intents, data)
+  return result
     # response = jsonify({'response': result})
     # response.headers.add('Access-Control-Allow-Origin', '*')
     # print("done")
