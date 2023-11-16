@@ -118,7 +118,7 @@ def get_response(intents_list, intents_json):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/search', methods=['POST'])
+@app.route('/search', methods=['GET'])
 def search():
   print("hiii its working")
   print(request.method)
