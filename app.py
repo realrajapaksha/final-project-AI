@@ -3,6 +3,7 @@ import string
 import random
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 import nltk
 import numpy as np
@@ -115,10 +116,10 @@ def get_response(intents_list, intents_json):
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 @app.route('/', methods=['GET'])
-def chat():
+def search():
     print("hiii its working")
     message = request.json['search']
     print(message)
