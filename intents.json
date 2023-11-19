@@ -30,7 +30,8 @@
 				"node",
 				"laravel",
 				"windows app",
-				"pos system"
+				"pos system",
+				"software development"
 			],
 			"tag": "computer 2"
 		},
@@ -43,7 +44,12 @@
 				"photoshop",
 				"premire pro",
 				"video editing",
-				"graphic design"
+				"graphic design",
+				"mobile app",
+				"flutter",
+				"react native",
+				"react",
+				""
 			],
 			"tag": "computer 3"
 		},
@@ -53,7 +59,10 @@
 				"autocad",
 				"illustrator",
 				"maya",
-				"4k editing"
+				"4k editing",
+				"minning",
+				"architecture",
+				"complex"
 			],
 			"tag": "computer 4"
 		},
@@ -74,18 +83,56 @@
 		},
 		{
 			"patterns": [
-				"zoom",
-				"dropshipping",
-				"directshipping",
-				"office work",
-				"meeting",
-				"data entry",
-				"web browsing",
+				"live",
+				"live chat",
+				"omagle",
 				"facebook",
-				"chat",
-				"social media"
+				"instagram",
+				"fun",
+				"teaching",
+				"teach",
+				"online",
+				"social media",
+				"presentation"
 			],
 			"tag": "computer 1"
+		},
+		{
+			"patterns": [
+				"trading",
+				"minning",
+				"bitcoin",
+				"etheroum",
+				"esoft",
+				"nibm",
+				"nsbm",
+				"icbt",
+				"iit",
+				"cinec",
+				"higher education",
+				"diploma",
+				"degree"
+			],
+			"tag": "computer 2"
+		},
+		{
+			"patterns": [
+				"data science",
+				"ML",
+				"AI",
+				"web development",
+				"electronic",
+				"phone repair",
+				"fiverr",
+				"icbt",
+				"iit",
+				"cinec",
+				"higher education",
+				"diploma",
+				"degree",
+				"logo design"
+			],
+			"tag": "computer 2"
 		}
 	]
 }

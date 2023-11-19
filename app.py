@@ -1,7 +1,7 @@
 import json
 import string
 import random
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 # from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -110,22 +110,14 @@ def get_response(intents_list, intents_json):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/', methods=['GET'])
+@app.route('/search', methods=['GET'])
 def search():
-  print("hiii its working")
-  print(request.method)
   print(request.args.get('keyword'))
-  # if request.method == 'GET':
-    # req = request.get_json()
-    # print(req['search'])
-  print("message")
-  intents = pred_class('development', words, classes)
+  intents = pred_class(request.args.get('keyword'), words, classes)
   result = get_response(intents, data)
-  return result
-    # response = jsonify({'response': result})
-    # response.headers.add('Access-Control-Allow-Origin', '*')
-    # print("done")
-    # return response
+  response = jsonify({'response': result})
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  return response
 
 if __name__ == '__main__':
   app.run(debug=TRUE)
