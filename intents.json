@@ -49,7 +49,11 @@
 				"flutter",
 				"react native",
 				"react",
-				""
+				"data science",
+				"ML",
+				"AI",
+				"data warehouse",
+				"big data"
 			],
 			"tag": "computer 3"
 		},
@@ -100,9 +104,8 @@
 		{
 			"patterns": [
 				"trading",
-				"minning",
 				"bitcoin",
-				"etheroum",
+				"ethereum",
 				"esoft",
 				"nibm",
 				"nsbm",
@@ -111,15 +114,15 @@
 				"cinec",
 				"higher education",
 				"diploma",
-				"degree"
+				"degree",
+				"stock",
+				"online business",
+				"startup"
 			],
 			"tag": "computer 2"
 		},
 		{
 			"patterns": [
-				"data science",
-				"ML",
-				"AI",
 				"web development",
 				"electronic",
 				"phone repair",
