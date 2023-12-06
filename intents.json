@@ -81,7 +81,8 @@
 				"web browsing",
 				"facebook",
 				"chat",
-				"social media"
+				"social media",
+				"assistance"
 			],
 			"tag": "computer 1"
 		},
@@ -133,7 +134,10 @@
 				"higher education",
 				"diploma",
 				"degree",
-				"logo design"
+				"logo design",
+				"project management",
+				"lecture",
+				"deployment"
 			],
 			"tag": "computer 2"
 		}
